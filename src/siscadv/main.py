@@ -27,8 +27,7 @@ class VisitorRegistry:
     def add_visitor(self, visitor: Visitor) -> Visitor:
         """Store a visitor registration and stamp it with the current time."""
 
-        if not visitor.registered_at:
-            visitor.registered_at = datetime.utcnow()
+        visitor.registered_at = datetime.utcnow()
         self._records.append(visitor)
         return visitor
 
