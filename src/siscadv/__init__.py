@@ -1,0 +1,1 @@
+"""Visitor registration service package."""
